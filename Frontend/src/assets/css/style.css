@@ -1,0 +1,647 @@
+:root {
+    --primary-color: #FF4B2B;
+    --secondary-color: #fa8874;
+    --hover-color: #FF416C;
+    --linear-gradient: linear-gradient(to right, #FF4B2B, #FF416C);
+    --gap: 20px;
+}
+
+/***** Navbar *****/
+.mjwi-nav-profile-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.mjwi-navbar {
+    display: flex;
+    justify-content: space-between;
+    background: var(--linear-gradient);
+    padding: 10px;
+    color: white;
+}
+
+.mjwi-navbar-links {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.mjwi-nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.mjwi-dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px #aaa;
+    z-index: 1;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100px;
+  }
+
+  .mjwi-dropdown-item {
+    border-bottom: 1px solid #ccc;
+    color: var(--primary-color);
+    padding: 10px;
+  }
+  .mjwi-dropdown-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px #aaa;
+  }
+  .mjwi-dropdown-content a{
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid #ccc;
+  }
+  .mjwi-dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+/***** Widget Wrapper *****/
+.mjwi-add-widget-btn {
+    width: 150px;
+    padding: 10px;
+    margin-inline: auto;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    box-shadow: 0 0 3px var(--primary-color);
+}
+.mjwi-add-widget-btn:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0 0 5px var(--hover-color);
+    cursor: pointer;
+}
+.mjwi-add-widget-btn a{
+    text-decoration: none;
+    color: white;
+}
+.mjwi-widgets-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.mjwi-widgets-leftbar {
+    height: 100vh;
+    width: 10%;
+    background-color: grey;
+}
+
+.mjwi-widget-list{
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+/***** Catalog *****/
+.mjwi-ct-container {
+    display: flex;
+    height: 100vh; 
+}
+
+.mjwi-ct-menu {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.mjwi-ct-menu__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mjwi-ct-menu__list {
+    list-style: none;
+    padding: 0;
+}
+
+.mjwi-ct-menu__item {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.mjwi-ct-content {
+    width: 80%;
+    padding: 20px;
+}
+  
+.mjwi-ct-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.mjwi-ct-card {
+    width: 210px;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius:  0.75rem;
+    box-shadow: 1px 4px 4px 2px #aaa;
+    position: relative;
+  }
+  
+  .mjwi-ct-card > * + * {
+    margin-top: 1.1em;
+  }
+  
+  .mjwi-ct-card .mjwi-ct-card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .mjwi-ct-card .mjwi-ct-card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+  }
+
+  .mjwi-ct-card__title  a{
+    text-transform: capitalize;
+  }
+
+  .mjwi-ct-card a {
+    text-decoration: none;
+  }
+  .mjwi-ct-search {
+    margin: 10px;
+    text-align: center;
+  }
+  .mjwi-ct-search input{
+    padding: 8px;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+  }
+  
+  /* hover */
+  .mjwi-ct-card:hover .mjwi-ct-card__title {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .mjwi-ct-card:hover .mjwi-ct-card__arrow {
+    background: #111;
+  }
+  
+  .mjwi-ct-card:hover .mjwi-ct-card__arrow svg {
+    transform: translateX(3px);
+  }
+  
+
+/***** Button *****/
+.mjwi-btn {
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    max-width: 110px;
+    text-align: center;
+    height: 10px;
+    line-height: 0.5em;
+    font-size: 13px;
+    font-weight: 600;
+    height: 25px;
+}
+.mjwi-btn:hover,
+.mjwi-btn:focus {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+/***** Widget *****/
+.mjwi-widget-container {
+    display: flex;
+    gap: 10px;
+    box-shadow: 0px 0px 3px #aaa;
+    padding: 10px;
+    border-radius: 15px;
+    width: 70%;
+    min-height: 100px;
+}
+
+.mjwi-widget-img {
+    height: 100px;
+    width: 100px;
+}
+
+.mjwi-widget-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/***** Editor *****/
+.mjwi-popup {
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+    min-width: 400px;
+    max-height: 90vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25vh;
+}
+
+.mjwi-editor-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.mjwi-editor-content {
+    width: 100%;
+}
+
+.mjwi-editor {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.mjwi-editor-leftbar {
+    width: 40px;
+    min-width: 40px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mjwi-editor-leftbar div {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mjwi-editor-main {
+    width: 240px;
+    min-width: 240px;
+    display: flex;
+    background-color: #9CA2A7;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+} 
+
+.mjwi-editor-builder, .mjwi-editor-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: auto;
+
+}
+
+
+.mjwi-editor-display {
+    width: 100%;
+    padding: 10px;
+}
+
+/***** Appfolio *****/
+.mjwi-apfl-display-filters {
+    display: flex;
+    flex-direction: column;
+}
+
+/***** Embedded code *****/
+.mjwi-popup-content {
+    max-height: 600px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.mjwi-popup .mjwi-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #aaa;
+}
+
+.mjwi-popup .mjwi-close:hover {
+    color: #000;
+}
+
+/***** Account *****/
+.mjwi-profile-img {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 50%;
+}
+.mjwi-profile-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.mjwi-setting-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .mjwi-profile-setting,
+  .mjwi-security-setting,
+  .mjwi-reset-pwd,
+  .mjwi-delete-account,
+  .mjwi-subscription-plans {
+    width: 30%;
+  }
+  
+  .mjwi-profile-setting,
+  .mjwi-security-setting,
+  .mjwi-reset-pwd,
+  .mjwi-subscription-plans,
+  .mjwi-delete-account{
+    margin-right: 20px;
+  }
+  
+  .mjwi-profile-setting h2,
+  .mjwi-security-setting h3,
+  .mjwi-reset-pwd h3,
+  .mjwi-delete-account h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .mjwi-profile-setting h3,
+  .mjwi-security-setting h3,
+  .mjwi-reset-pwd h3,
+  .mjwi-delete-account h3,
+  .mjwi-subscription-plans h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .mjwi-profile-setting label,
+  .mjwi-security-setting label,
+  .mjwi-reset-pwd label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .mjwi-profile-setting input,
+  .mjwi-security-setting input,
+  .mjwi-reset-pwd input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .mjwi-delete-account {
+    margin-top: 30px;
+  }
+
+/***** User plans *****/
+.mjwi-pricing-plans-container *{
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mjwi-pricing-plans {
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 64px;
+  
+}
+
+.mjwi-pricing-card {
+  --col: #e4e4e7;
+  position: relative;
+  min-width: 360px;
+  padding: 32px;
+  padding-bottom: 96px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+  background-color: #26262620;
+  box-shadow: 0 0 32px transparent;
+  text-align: center;
+}
+
+.mjwi-pricing-card.mjwi-basic {
+  --col: #0891b2;
+}
+
+.mjwi-pricing-card.mjwi-standard {
+  --col: #059669;
+}
+
+.mjwi-pricing-card.mjwi-premium {
+  --col: #c026d3;
+}
+
+.mjwi-pricing-card:hover {
+  box-shadow: 0 0 32px #aaa;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.mjwi-pricing-card > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mjwi-pricing-card .mjwi-heading h4 {
+  padding-bottom: 12px;
+  color: var(--col);
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.mjwi-pricing-card .mjwi-heading p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.mjwi-pricing-card .mjwi-price {
+  position: relative;
+  color: var(--col);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.mjwi-pricing-card .mjwi-price sub {
+  position: absolute;
+  bottom: 14px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.mjwi-pricing-card .mjwi-features li {
+  padding-bottom: 16px;
+  color: #a3a3a3;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.mjwi-pricing-card .mjwi-features li i,
+.mjwi-pricing-card .mjwi-features li strong {
+  color: #e4e4e7;
+  font-size: 16px;
+  text-align: left;
+}
+
+.mjwi-pricing-card .mjwi-features li strong {
+  padding-left: 24px;
+}
+
+.mjwi-pricing-card .mjwi-cta-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--col);
+  background-color: var(--col);
+  color: #e4e4e7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mjwi-pricing-card .mjwi-cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+.mjwi-cta-curr-plan {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 12px;
+  color: var(--col);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/***** Verify password popup *****/
+.mjwi-password-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  text-align: center;
+}
+
+.mjwi-password-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mjwi-submit-button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.mjwi-submit-button:hover {
+  background-color: #45a049;
+}
+
+
+/***** Overlay *****/
+.mjwi-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mjwi-error {
+	margin: 10px;
+	color: red;
+	font-size: 13px;
+}
+
+.mjwi-error-main {
+    position: absolute;
+    right: 10px;
+    box-shadow: 0 0 3px #aaa;
+    padding: 10px;
+    color: red;
+    background-color: white;
+}
+
+.mjwi-msg-main {
+    position: absolute;
+    right: 10px;
+    box-shadow: 0 0 3px #aaa;
+    padding: 10px;
+    color: green;
+    background-color: white;
+}
+
+.mjwi-hidden {
+    display: none;
+}
+
+.mjwi-textarea {
+  height: 120px;
+  width: 350px;
+}

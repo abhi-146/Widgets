@@ -1,0 +1,49 @@
+.mjwi-fls-file-previews {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.mjwi-fls-file-preview {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.mjwi-fls-file-preview img {
+    width: 150px;
+    height: 150px;
+}
+
+.mjwi-fls-file-editor {
+    display: flex;
+    flex-direction: column;
+}
+
+.mjwi-fls-file-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+}
+
+.mjwi-fls-file-edit span {
+    cursor: pointer;
+}
+
+.mjwi-fls-filename {
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.mjwi-editor-builder h2 {
+    margin: 0;
+}
+.mjwi-editor-file-full-preview {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}

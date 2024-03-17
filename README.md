@@ -46,12 +46,3 @@ We welcome contributions from the community! If you'd like to contribute to the 
 2. Make your changes and ensure that the code passes all tests.
 3. Submit a pull request detailing your changes and explaining their purpose.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or suggestions regarding the project, please feel free to contact us at [email@example.com](mailto:email@example.com).
-
-Thank you for using the MERN Widgets Project!
